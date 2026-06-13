@@ -1,8 +1,84 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+<div align="center">
+  <br />
+  <br />
+  
+  <h1 align="center">hypecaves — portfolio</h1>
 
-## Getting Started
+  <p align="center">
+    A minimal, highly-interactive, and ultra-high resolution personal portfolio built with Next.js and Framer Motion.
+  </p>
 
-First, run the development server:
+  <p align="center">
+    <a href="https://nextjs.org/">
+      <img src="https://img.shields.io/badge/Next.js-000000?style=for-the-badge&logo=nextdotjs&logoColor=white" alt="Next.js" />
+    </a>
+    <a href="https://tailwindcss.com/">
+      <img src="https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white" alt="Tailwind CSS" />
+    </a>
+    <a href="https://www.framer.com/motion/">
+      <img src="https://img.shields.io/badge/Framer_Motion-0055FF?style=for-the-badge&logo=framer&logoColor=white" alt="Framer Motion" />
+    </a>
+    <a href="https://typescriptlang.org/">
+      <img src="https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white" alt="TypeScript" />
+    </a>
+  </p>
+
+  <br />
+</div>
+
+<hr />
+
+## ✦ Overview
+
+This repository contains the source code for my personal portfolio website. It is designed with a focus on minimalism, fluid animations, and a premium user experience. The project is fully open-source, so feel free to explore the code, learn from it, or use it as inspiration for your own projects.
+
+<br />
+
+## ✦ Key Features
+
+- **Fluid Animations:** Comprehensive use of `framer-motion` for stagger entrance animations, rolling text, and smooth scroll effects.
+- **View Transitions API:** A stunning, 60fps circular clip-path theme toggle (Dark/Light mode) powered by the native browser View Transitions API.
+- **Ultra-High Resolution Canvas:** A custom-built particle destruction effect rendering text at pixel-perfect native device resolution (`devicePixelRatio`).
+- **Live Discord Presence:** Real-time integration with `use-lanyard` to display my current Discord status, including a dynamic Spotify "Now Playing" music bar.
+- **Interactive Bento Grid:** A modern, grid-based layout for showcasing projects, skills, and social links.
+- **GitHub Contribution Graph:** Live rendering of daily coding activity utilizing `react-github-calendar`.
+
+<br />
+
+## ✦ Tech Stack
+
+| Category | Technologies |
+| :--- | :--- |
+| **Framework** | Next.js 14 (App Router), React 18 |
+| **Styling** | TailwindCSS, Custom CSS Variables |
+| **Animation** | Framer Motion, HTML5 Canvas API, View Transitions API |
+| **Data Fetching** | Lanyard WS (WebSockets) |
+| **Language** | TypeScript |
+
+<br />
+
+## ✦ Getting Started
+
+To run this project locally, follow these steps:
+
+### 1. Clone the repository
+
+```bash
+git clone https://github.com/hypecavess/portfolio.git
+cd portfolio
+```
+
+### 2. Install dependencies
+
+```bash
+npm install
+# or
+yarn install
+# or
+pnpm install
+```
+
+### 3. Run the development server
 
 ```bash
 npm run dev
@@ -10,27 +86,26 @@ npm run dev
 yarn dev
 # or
 pnpm dev
-# or
-bun dev
 ```
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+<br />
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## ✦ Configuration
 
-## Learn More
+- **Discord Lanyard:** To show your own Discord activity, locate the `DISCORD_ID` variable in the `NowPlayingBar.tsx` component and replace it with your own Discord User ID.
+- **GitHub Calendar:** Locate the `<GitHubCalendar username="..." />` component in `GithubGrid.tsx` and replace the username with your own GitHub handle.
 
-To learn more about Next.js, take a look at the following resources:
+<br />
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## ✦ License
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+This project is open-source and available under the [MIT License](LICENSE). You are free to copy, modify, and use this project for your own personal or commercial works.
 
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+<div align="center">
+  <br />
+  <p>
+    Built with 🖤 by <a href="https://github.com/hypecavess">hypecaves</a>.
+  </p>
+</div>
