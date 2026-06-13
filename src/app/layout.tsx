@@ -41,7 +41,30 @@ const climateCrisis = Climate_Crisis({
 
 export const metadata: Metadata = {
   title: "hypecaves",
-  description: "hypecaves — portfolio",
+  description: "Full-Stack Software Engineer and UI/UX & Graphic Designer. Building scalable products, communities and digital experiences.",
+  openGraph: {
+    title: "hypecaves",
+    description: "Full-Stack Software Engineer and UI/UX & Graphic Designer. Building scalable products, communities and digital experiences.",
+    url: "https://hypecaves.vercel.app",
+    siteName: "hypecaves",
+    images: [
+      {
+        url: "/og-image.png",
+        width: 1200,
+        height: 630,
+        alt: "hypecaves portfolio",
+      },
+    ],
+    locale: "en_US",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "hypecaves",
+    description: "Full-Stack Software Engineer and UI/UX & Graphic Designer.",
+    creator: "@hypecavess",
+    images: ["/og-image.png"],
+  },
 };
 
 export default function RootLayout({
