@@ -2,9 +2,6 @@ import type { Metadata } from "next";
 import localFont from "next/font/local";
 import { Climate_Crisis } from "next/font/google";
 import "./globals.css";
-import { ThemeProvider } from "./components/ThemeProvider";
-import ThemeTransition from "./components/ThemeTransition";
-import Navbar from "./components/Navbar";
 
 const gtWalsheim = localFont({
   src: [
@@ -75,14 +72,11 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      data-theme="light"
+      data-theme="dark"
       className={`${gtWalsheim.variable} ${climateCrisis.variable} h-full antialiased`}
     >
-      <body className="min-h-full flex flex-col">
-        <ThemeProvider>
-          <Navbar />
-          {children}
-        </ThemeProvider>
+      <body className="min-h-full flex flex-col bg-black text-white">
+        {children}
       </body>
     </html>
   );
