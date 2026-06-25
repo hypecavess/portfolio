@@ -116,16 +116,16 @@ export default function Home() {
 
       </div>
 
-      <footer className="w-full mt-8 h-[12.5rem] fade-in delay-6">
-        <div className="max-w-[700px] w-full mx-auto px-4 h-full flex justify-between items-center">
-          <div className="flex space-x-8">
+      <footer className="w-full mt-8 h-auto py-8 sm:py-0 sm:h-[12.5rem] fade-in delay-6">
+        <div className="max-w-[700px] w-full mx-auto px-4 h-full flex flex-col sm:flex-row justify-between items-center gap-y-4 sm:gap-y-0">
+          <div className="flex flex-wrap gap-x-6 gap-y-2 justify-center sm:justify-start">
             <a className="hover:text-gray-300 transition-colors" href="https://x.com/hypecavess" target="_blank" rel="noreferrer">𝕏</a>
             <a className="hover:text-gray-300 transition-colors" href="https://instagram.com/hypecavess" target="_blank" rel="noreferrer">Instagram</a>
             <a className="hover:text-gray-300 transition-colors" href="https://github.com/hypecavess" target="_blank" rel="noreferrer">GitHub</a>
             <a className="hover:text-gray-300 transition-colors" href="https://www.threads.com/@hypecavess" target="_blank" rel="noreferrer">Threads</a>
             <a className="hover:text-gray-300 transition-colors" href="https://discord.com/users/1198654893758623755" target="_blank" rel="noreferrer">Discord</a>
           </div>
-          <div className="text-[#666]">Inspired by <a href="https://evilrabbit.com" target="_blank" rel="noreferrer">Evil Rabbit</a> © 2026</div>
+          <div className="text-[#666] text-center sm:text-right">Inspired by <a href="https://evilrabbit.com" target="_blank" rel="noreferrer">Evil Rabbit</a> © 2026</div>
         </div>
       </footer>
     </div>
